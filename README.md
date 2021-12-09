@@ -30,7 +30,7 @@
 ![5](https://user-images.githubusercontent.com/76679270/145397428-777021fd-bb56-4170-b1de-4c3f4739c990.png)
 
 
-#**2. Preprocessing (전처리)**
+#2. Preprocessing (전처리)
 
 
 #**3. LSTM**
