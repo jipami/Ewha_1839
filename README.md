@@ -31,6 +31,21 @@
 
 
 **2 - Preprocessing (전처리)**
+<크롤링한 데이터를 전처리하는 과정>
+google colab에서 preprocessing.ipynb 파일을 열어 차례대로 실행한다.
+
+1) 정제되지 않은 텍스트에 Py-Hanspell 적용
+* Py-Hanspell은 네이버 맞춤법 검사기를 바탕으로 만들어진 한국어 전처리 패키지다. 
+* 맞춤법 검사기를 import 하고 check를 하게 되면, 맞춤법과 띄어쓰기가 정확히 맞춰진다.
+
+2) 문장 토큰화 도구 KSS 적용
+* KSS는 한국어로 되어있는 텍스트를 문장 단위로 토큰화를 해주는 도구이다. 
+* 위에서 맞춤법이 정확하게 맞춰진 텍스트에 KSS를 적용하면 문장 단위로 나누어지게 된다.
+
+3) 형태소 분석 도구 KoNLPy 적용
+* KoNLPy는 형태소 단위로 토큰화를 하는 도구이다. 
+* KoNLPy를 통해서 사용할 수 있는 형태소 분석기에는 Okt(Open Korea Text), 메캅(Mecab), 코모란(Komoran), 한나눔(Hannanum), 꼬꼬마(Kkma)가 있다.
+* 그중 Open Korea Text 를 사용하여 형태소 추출을 적용하게 되면 다음과 같이 토큰화 된다.
 
 
 **3 - LSTM**
